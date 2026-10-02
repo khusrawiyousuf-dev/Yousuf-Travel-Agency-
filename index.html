@@ -4,23 +4,379 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="YOUSUF TRAVEL AGENCY — Premium futuristic travel experiences across the globe.">
+    <title>YOUSUF TRAVEL AGENCY — Beyond the Horizon</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
-    <title>Yousuf-Travel-Agency-| Home</title>
-
 </head>
 
 <body>
 
+    <!-- ============ LOADER ============ -->
+    <div id="loader">
+        <div class="loader-logo">
+            <span>Y</span><span>O</span><span>U</span><span>S</span><span>U</span><span>F</span>
+        </div>
+        <div class="loader-bar"></div>
+    </div>
 
-    <h1>Yousuf-Travel-Agency-</h1>
+    <!-- ============ HEADER ============ -->
+    <header class="site-header">
+        <div class="container nav-wrap">
+            <a href="index.html" class="brand">
+                <div class="brand-mark">Y</div>
+                <div class="brand-text">
+                    YOUSUF
+                    <small>TRAVEL AGENCY</small>
+                </div>
+            </a>
 
+            <nav class="main-nav" id="mainNav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
 
+            <div class="nav-actions">
+                <button class="btn btn-outline btn-sm" data-open-auth>
+                    <i class="fas fa-user"></i>
+                    <span class="btn-login-text">Login</span>
+                </button>
+                <button class="hamburger" id="hamburger" aria-label="Menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
 
+    <main>
 
+        <!-- ============ HERO ============ -->
+        <section class="hero">
+            <div class="container hero-grid">
+                <div class="hero-content">
+                    <div class="hero-badge">
+                        <span class="dot"></span>
+                        Premium Travel Experience
+                    </div>
+                    <h1 class="gradient-text">
+                        Explore The World<br>Beyond The Horizon
+                    </h1>
+                    <p class="hero-sub">
+                        YOUSUF TRAVEL AGENCY crafts cinematic journeys across 120+ destinations worldwide.
+                        From private island escapes to intercontinental business travel — we design
+                        every detail with precision and elegance.
+                    </p>
+                    <div class="hero-cta">
+                        <a href="services.html" class="btn btn-primary btn-lg">
+                            Explore Services <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="projects.html" class="btn btn-outline btn-lg">
+                            <i class="fas fa-play"></i> View Destinations
+                        </a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="hero-stat">
+                            <h4 data-count="120" data-suffix="+">0</h4>
+                            <p>Destinations</p>
+                        </div>
+                        <div class="hero-stat">
+                            <h4 data-count="18" data-suffix="K+">0</h4>
+                            <p>Happy Travelers</p>
+                        </div>
+                        <div class="hero-stat">
+                            <h4 data-count="15" data-suffix="+">0</h4>
+                            <p>Years Experience</p>
+                        </div>
+                    </div>
+                </div>
 
+                <div class="hero-visual">
+                    <div class="hero-glow-orb"></div>
+                    <canvas id="heroCanvas"></canvas>
 
+                    <div class="hero-float-card card-1">
+                        <div class="fc-icon"><i class="fas fa-plane"></i></div>
+                        <div>
+                            <div class="fc-title">Next Flight</div>
+                            <div class="fc-sub">Dubai • 02:45</div>
+                        </div>
+                    </div>
 
+                    <div class="hero-float-card card-2">
+                        <div class="fc-icon"><i class="fas fa-globe-asia"></i></div>
+                        <div>
+                            <div class="fc-title">120+ Destinations</div>
+                            <div class="fc-sub">Worldwide Coverage</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="scroll-indicator">
+                <div class="scroll-mouse"></div>
+                <span>Scroll</span>
+            </div>
+        </section>
+
+        <!-- ============ WHY US ============ -->
+        <section class="section-alt">
+            <div class="container">
+                <div style="text-align:center;" class="reveal">
+                    <div class="section-eyebrow">Why Choose Us</div>
+                    <h2 class="section-title">Travel Redefined For The Modern Age</h2>
+                    <p class="section-sub" style="margin: 0 auto;">
+                        We blend human expertise with next-generation technology to deliver travel experiences
+                        that feel effortless, personal, and unforgettable.
+                    </p>
+                </div>
+
+                <div class="cards-grid">
+                    <div class="service-card reveal reveal-delay-1">
+                        <div class="service-icon"><i class="fas fa-shield-halved"></i></div>
+                        <h3>Guaranteed Safety</h3>
+                        <p>Every itinerary is vetted by our 24/7 global safety network. Insurance, medical,
+                            and emergency support included in every package.</p>
+                        <button class="service-link">Learn More <i class="fas fa-arrow-right"></i></button>
+                    </div>
+
+                    <div class="service-card reveal reveal-delay-2">
+                        <div class="service-icon"><i class="fas fa-gem"></i></div>
+                        <h3>Luxury Curated</h3>
+                        <p>Five-star stays, private charters, and VIP access — designed for travelers who
+                            expect nothing less than perfection.</p>
+                        <button class="service-link">Learn More <i class="fas fa-arrow-right"></i></button>
+                    </div>
+
+                    <div class="service-card reveal reveal-delay-3">
+                        <div class="service-icon"><i class="fas fa-headset"></i></div>
+                        <h3>24/7 Concierge</h3>
+                        <p>A dedicated travel expert is always a message away. Real humans, real answers,
+                            any time zone.</p>
+                        <button class="service-link">Learn More <i class="fas fa-arrow-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ STATS ============ -->
+        <section>
+            <div class="container">
+                <div style="text-align:center;" class="reveal">
+                    <div class="section-eyebrow">By The Numbers</div>
+                    <h2 class="section-title">Trusted Worldwide</h2>
+                </div>
+
+                <div class="stats-grid">
+                    <div class="stat-card reveal">
+                        <div class="stat-number" data-count="120" data-suffix="+">0</div>
+                        <div class="stat-label">Destinations</div>
+                    </div>
+                    <div class="stat-card reveal reveal-delay-1">
+                        <div class="stat-number" data-count="18000" data-suffix="+">0</div>
+                        <div class="stat-label">Happy Travelers</div>
+                    </div>
+                    <div class="stat-card reveal reveal-delay-2">
+                        <div class="stat-number" data-count="99" data-suffix="%">0</div>
+                        <div class="stat-label">Satisfaction Rate</div>
+                    </div>
+                    <div class="stat-card reveal reveal-delay-3">
+                        <div class="stat-number" data-count="15" data-suffix="+">0</div>
+                        <div class="stat-label">Years Experience</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ CTA ============ -->
+        <section>
+            <div class="container">
+                <div class="cta-banner reveal">
+                    <div class="section-eyebrow">Ready To Fly</div>
+                    <h2>Your Next Adventure Starts Here</h2>
+                    <p>Let our travel experts craft a journey tailored precisely to your dreams.</p>
+                    <div class="cta-actions">
+                        <a href="contact.html" class="btn btn-primary btn-lg">
+                            Plan My Trip <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="about.html" class="btn btn-outline btn-lg">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="brand">
+                        <div class="brand-mark">Y</div>
+                        <div class="brand-text">
+                            YOUSUF
+                            <small>TRAVEL AGENCY</small>
+                        </div>
+                    </a>
+                    <p>Premium travel experiences crafted for the modern explorer. We take you beyond the horizon — with
+                        precision, elegance, and care.</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html">Flight Booking</a></li>
+                        <li><a href="services.html">Luxury Stays</a></li>
+                        <li><a href="services.html">Private Tours</a></li>
+                        <li><a href="services.html">Visa Assistance</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="tel:+971500000000"><i class="fas fa-phone"></i> +971 50 000 0000</a></li>
+                        <li><a href="mailto:hello@yousuf-travel.com"><i class="fas fa-envelope"></i>
+                                hello@yousuf-travel.com</a></li>
+                        <li><a href="#"><i class="fas fa-map-marker-alt"></i> Dubai, UAE</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <span>© 2025 YOUSUF TRAVEL AGENCY. All rights reserved.</span>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ============ BACK TO TOP ============ -->
+    <button class="back-top" id="backTop" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- ============ AUTH MODAL ============ -->
+    <div class="modal-overlay auth-modal" id="authModal">
+        <div class="modal">
+            <button class="modal-close" onclick="closeAuth()" aria-label="Close">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="modal-body">
+                <div class="auth-tabs">
+                    <button class="auth-tab active" data-tab="login">Login</button>
+                    <button class="auth-tab" data-tab="signup">Sign Up</button>
+                </div>
+
+                <!-- LOGIN FORM -->
+                <form class="auth-form active" id="loginForm" novalidate>
+                    <div class="form-group">
+                        <label for="loginEmail">Email Address</label>
+                        <input type="email" class="form-control" id="loginEmail" name="loginEmail"
+                            placeholder="you@example.com">
+                        <span class="form-error"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="loginPassword">Password</label>
+                        <div class="password-wrap">
+                            <input type="password" class="form-control" id="loginPassword" name="loginPassword"
+                                placeholder="••••••••">
+                            <button type="button" class="password-toggle" aria-label="Toggle password">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                        <span class="form-error"></span>
+                    </div>
+                    <div class="form-row">
+                        <label class="checkbox-wrap">
+                            <input type="checkbox" name="remember">
+                            <span class="checkbox-box"></span>
+                            Remember me
+                        </label>
+                        <a class="forgot-link"
+                            onclick="showToast('info','Password Reset','A reset link would be sent to your email.')">Forgot
+                            password?</a>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width:100%;">
+                        Login <i class="fas fa-arrow-right"></i>
+                    </button>
+                </form>
+
+                <!-- SIGNUP FORM -->
+                <form class="auth-form" id="signupForm" novalidate>
+                    <div class="form-group">
+                        <label for="signupName">Full Name</label>
+                        <input type="text" class="form-control" id="signupName" name="signupName"
+                            placeholder="John Doe">
+                        <span class="form-error"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="signupEmail">Email Address</label>
+                        <input type="email" class="form-control" id="signupEmail" name="signupEmail"
+                            placeholder="you@example.com">
+                        <span class="form-error"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="signupPassword">Password</label>
+                        <div class="password-wrap">
+                            <input type="password" class="form-control" id="signupPassword" name="signupPassword"
+                                placeholder="Min. 6 characters">
+                            <button type="button" class="password-toggle" aria-label="Toggle password">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                        <span class="form-error"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="signupConfirm">Confirm Password</label>
+                        <div class="password-wrap">
+                            <input type="password" class="form-control" id="signupConfirm" name="signupConfirm"
+                                placeholder="Repeat password">
+                            <button type="button" class="password-toggle" aria-label="Toggle password">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                        <span class="form-error"></span>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width:100%;">
+                        Create Account <i class="fas fa-user-plus"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============ THREE.JS ============ -->
     <script src="./assets/java/main.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

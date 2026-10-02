@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Featured travel projects and destinations by YOUSUF TRAVEL AGENCY.">
+    <title>Projects — YOUSUF TRAVEL AGENCY</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+
+    <div id="loader">
+        <div class="loader-logo"><span>Y</span><span>O</span><span>U</span><span>S</span><span>U</span><span>F</span>
+        </div>
+        <div class="loader-bar"></div>
+    </div>
+
+    <header class="site-header">
+        <div class="container nav-wrap">
+            <a href="index.html" class="brand">
+                <div class="brand-mark">Y</div>
+                <div class="brand-text">YOUSUF<small>TRAVEL AGENCY</small></div>
+            </a>
+            <nav class="main-nav" id="mainNav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="nav-actions">
+                <button class="btn btn-outline btn-sm" data-open-auth>
+                    <i class="fas fa-user"></i><span class="btn-login-text">Login</span>
+                </button>
+                <button class="hamburger" id="hamburger" aria-label="Menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="page-hero">
+            <div class="container reveal">
+                <div class="section-eyebrow">Our Portfolio</div>
+                <h1 class="gradient-text">Signature Journeys<br>& Featured Destinations</h1>
+                <p class="section-sub" style="margin: 1.5rem auto 0;">
+                    A curated selection of journeys we've designed for discerning travelers
+                    across the globe.
+                </p>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="filter-bar">
+                    <button class="filter-btn active" data-filter="all">All Projects</button>
+                    <button class="filter-btn" data-filter="luxury">Luxury</button>
+                    <button class="filter-btn" data-filter="adventure">Adventure</button>
+                    <button class="filter-btn" data-filter="business">Business</button>
+                    <button class="filter-btn" data-filter="romance">Romance</button>
+                </div>
+
+                <div class="projects-grid" id="projectsGrid">
+
+                    <div class="project-card reveal" data-category="luxury" onclick="openProjectModal({
+          title: 'Maldives Overwater Retreat',
+          categoryLabel: 'Luxury Escape',
+          image: 'https://images.unsplash.com/photo-1514282401047-d79a71a590e8?auto=format&fit=crop&w=1200&q=80',
+          client: 'Private Client', year: '2024', duration: '7 Days',
+          description: 'An ultra-exclusive overwater villa experience in the heart of the Maldives. Private chef, personal butler, sunset yacht charters, and underwater dining — every moment designed for absolute serenity.',
+          tech: ['Overwater Villa', 'Private Jet', 'Yacht Charter', 'Michelin Chef']
+        })">
+                        <div class="project-image">
+                            <span class="project-cat-badge">Luxury</span>
+                            <img src="https://images.unsplash.com/photo-1514282401047-d79a71a590e8?auto=format&fit=crop&w=800&q=80"
+                                alt="Maldives Retreat" loading="lazy">
+                        </div>
+                        <div class="project-info">
+                            <h3>Maldives Overwater Retreat</h3>
+                            <p>Seven days of pure serenity in a private overwater villa with dedicated staff and yacht
+                                charters.</p>
+                            <div class="project-tags">
+                                <span class="project-tag">Maldives</span>
+                                <span class="project-tag">Luxury</span>
+                                <span class="project-tag">7 Days</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card reveal reveal-delay-1" data-category="adventure" onclick="openProjectModal({
+          title: 'Iceland Northern Lights Expedition',
+          categoryLabel: 'Adventure Travel',
+          image: 'https://images.unsplash.com/photo-1531366936337-7c912a4589a7?auto=format&fit=crop&w=1200&q=80',
+          client: 'Explorer Group', year: '2024', duration: '10 Days',
+          description: 'Chase the aurora borealis across Iceland with expert guides. Glacier hikes, ice caves, whale watching, and private geothermal lagoon access — an expedition for the truly adventurous.',
+          tech: ['Aurora Hunt', 'Glacier Hike', 'Ice Caves', 'Geothermal Spa']
+        })">
+                        <div class="project-image">
+                            <span class="project-cat-badge">Adventure</span>
+                            <img src="https://images.unsplash.com/photo-1531366936337-7c912a4589a7?auto=format&fit=crop&w=800&q=80"
+                                alt="Iceland" loading="lazy">
+                        </div>
+                        <div class="project-info">
+                            <h3>Iceland Northern Lights Expedition</h3>
+                            <p>Ten days chasing the aurora through glaciers, ice caves, and volcanic landscapes.</p>
+                            <div class="project-tags">
+                                <span class="project-tag">Iceland</span>
+                                <span class="project-tag">Adventure</span>
+                                <span class="project-tag">10 Days</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card reveal reveal-delay-2" data-category="business" onclick="openProjectModal({
+          title: 'Executive Tokyo Business Summit',
+          categoryLabel: 'Business Travel',
+          image: 'https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?auto=format&fit=crop&w=1200&q=80',
+          client: 'Fortune 500 Corp', year: '2024', duration: '5 Days',
+          description: 'A fully-managed corporate travel program for 40 executives. Business-class flights, five-star accommodation, private transfers, and dedicated on-ground coordination throughout Tokyo.',
+          tech: ['Business Class', '5-Star Hotel', 'Private Transfers', 'VIP Access']
+        })">
+                        <div class="project-image">
+                            <span class="project-cat-badge">Business</span>
+                            <img src="https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?auto=format&fit=crop&w=800&q=80"
+                                alt="Tokyo" loading="lazy">
+                        </div>
+                        <div class="project-info">
+                            <h3>Executive Tokyo Business Summit</h3>
+                            <p>Full-scale corporate travel management for 40 executives in Tokyo's premier venues.</p>
+                            <div class="project-tags">
+                                <span class="project-tag">Tokyo</span>
+                                <span class="project-tag">Business</span>
+                                <span class="project-tag">5 Days</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card reveal" data-category="romance" onclick="openProjectModal({
+          title: 'Santorini Honeymoon Escape',
+          categoryLabel: 'Romance',
+          image: 'https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?auto=format&fit=crop&w=1200&q=80',
+          client: 'Private Couple', year: '2023', duration: '8 Days',
+          description: 'A dreamy Santorini honeymoon featuring a cliffside suite with private infinity pool, sunset catamaran cruise, private wine tasting, and candlelit dinners over the caldera.',
+          tech: ['Cliffside Suite', 'Catamaran Cruise', 'Wine Tasting', 'Private Dinners']
+        })">
+                        <div class="project-image">
+                            <span class="project-cat-badge">Romance</span>
+                            <img src="https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?auto=format&fit=crop&w=800&q=80"
+                                alt="Santorini" loading="lazy">
+                        </div>
+                        <div class="project-info">
+                            <h3>Santorini Honeymoon Escape</h3>
+                            <p>A romantic eight-day journey through Greece's most iconic island destination.</p>
+                            <div class="project-tags">
+                                <span class="project-tag">Greece</span>
+                                <span class="project-tag">Romance</span>
+                                <span class="project-tag">8 Days</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card reveal reveal-delay-1" data-category="luxury" onclick="openProjectModal({
+          title: 'Dubai Luxury Skyline Experience',
+          categoryLabel: 'Luxury City Break',
+          image: 'https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=1200&q=80',
+          client: 'VIP Client', year: '2024', duration: '4 Days',
+          description: 'Helicopter tour over the Palm, private Burj Khalifa sky deck access, Lamborghini city drive, and Michelin-starred dining across Dubai\'s most iconic venues.',
+          tech: ['Helicopter Tour', 'Burj Khalifa VIP', 'Supercar Drive', 'Fine Dining']
+        })">
+                        <div class="project-image">
+                            <span class="project-cat-badge">Luxury</span>
+                            <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=800&q=80"
+                                alt="Dubai" loading="lazy">
+                        </div>
+                        <div class="project-info">
+                            <h3>Dubai Luxury Skyline Experience</h3>
+                            <p>Four days of pure VIP treatment in the city of gold, from sky to sand.</p>
+                            <div class="project-tags">
+                                <span class="project-tag">Dubai</span>
+                                <span class="project-tag">Luxury</span>
+                                <span class="project-tag">4 Days</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card reveal reveal-delay-2" data-category="adventure" onclick="openProjectModal({
+          title: 'Swiss Alps Winter Expedition',
+          categoryLabel: 'Adventure',
+          image: 'https://images.unsplash.com/photo-1531366936337-7c912a4589a7?auto=format&fit=crop&w=1200&q=80',
+          client: 'Alpine Club', year: '2023', duration: '9 Days',
+          description: 'A world-class alpine experience — private chalet, helicopter heli-skiing, glacier trekking, and Michelin-starred mountain dining in Zermatt.',
+          tech: ['Heli-Skiing', 'Glacier Trek', 'Private Chalet', 'Alpine Dining']
+        })">
+                        <div class="project-image">
+                            <span class="project-cat-badge">Adventure</span>
+                            <img src="https://images.unsplash.com/photo-1508614589041-895b88991e3e?auto=format&fit=crop&w=800&q=80"
+                                alt="Alps" loading="lazy">
+                        </div>
+                        <div class="project-info">
+                            <h3>Swiss Alps Winter Expedition</h3>
+                            <p>Nine days of alpine adventure including heli-skiing, glacier treks, and luxury chalets.
+                            </p>
+                            <div class="project-tags">
+                                <span class="project-tag">Switzerland</span>
+                                <span class="project-tag">Adventure</span>
+                                <span class="project-tag">9 Days</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="cta-banner reveal">
+                    <div class="section-eyebrow">Your Story Awaits</div>
+                    <h2>Let's Design Your Signature Journey</h2>
+                    <p>Every project above started with a single conversation. Yours can too.</p>
+                    <div class="cta-actions">
+                        <a href="contact.html" class="btn btn-primary btn-lg">
+                            Start Planning <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="services.html" class="btn btn-outline btn-lg">Explore Services</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="brand">
+                        <div class="brand-mark">Y</div>
+                        <div class="brand-text">YOUSUF<small>TRAVEL AGENCY</small></div>
+                    </a>
+                    <p>Premium travel experiences crafted for the modern explorer.</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html">Flight Booking</a></li>
+                        <li><a href="services.html">Luxury Stays</a></li>
+                        <li><a href="services.html">Private Tours</a></li>
+                        <li><a href="services.html">Visa Assistance</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="tel:+971500000000"><i class="fas fa-phone"></i> +971 50 000 0000</a></li>
+                        <li><a href="mailto:hello@yousuf-travel.com"><i class="fas fa-envelope"></i>
+                                hello@yousuf-travel.com</a></li>
+                        <li><a href="#"><i class="fas fa-map-marker-alt"></i> Dubai, UAE</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>© 2025 YOUSUF TRAVEL AGENCY. All rights reserved.</span>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button class="back-top" id="backTop" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
+
+    <!-- PROJECT MODAL -->
+    <div class="modal-overlay" id="projectModal">
+        <div class="modal">
+            <button class="modal-close" onclick="closeProjectModal()"><i class="fas fa-times"></i></button>
+            <div id="modalBody"></div>
+        </div>
+    </div>
+
+    <!-- AUTH MODAL -->
+    <div class="modal-overlay auth-modal" id="authModal">
+        <div class="modal">
+            <button class="modal-close" onclick="closeAuth()"><i class="fas fa-times"></i></button>
+            <div class="modal-body">
+                <div class="auth-tabs">
+                    <button class="auth-tab active" data-tab="login">Login</button>
+                    <button class="auth-tab" data-tab="signup">Sign Up</button>
+                </div>
+                <form class="auth-form active" id="loginForm" novalidate>
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="email" class="form-control" name="loginEmail" placeholder="you@example.com">
+                        <span class="form-error"></span>
+                    </div>
+                    <div class="form-group">
+                        <label>Password</label>
+                        <div class="password-wrap">
+                            <input type="password" class="form-control" name="loginPassword" placeholder="••••••••">
+                            <button type="button" class="password-toggle"><i class="fas fa-eye"></i></button>
+                        </div>
+                        <span class="form-error"></span>
+                    </div>
+                    <div class="form-row">
+                        <label class="checkbox-wrap"><input type="checkbox"><span class="checkbox-box"></span> Remember
+                            me</label>
+                        <a class="forgot-link"
+                            onclick="showToast('info','Reset Link','Password reset email sent.')">Forgot?</a>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width:100%;">Login <i
+                            class="fas fa-arrow-right"></i></button>
+                </form>
+                <form class="auth-form" id="signupForm" novalidate>
+                    <div class="form-group">
+                        <label>Full Name</label>
+                        <input type="text" class="form-control" name="signupName" placeholder="John Doe">
+                        <span class="form-error"></span>
+                    </div>
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="email" class="form-control" name="signupEmail" placeholder="you@example.com">
+                        <span class="form-error"></span>
+                    </div>
+                    <div class="form-group">
+                        <label>Password</label>
+                        <div class="password-wrap">
+                            <input type="password" class="form-control" name="signupPassword"
+                                placeholder="Min. 6 characters">
+                            <button type="button" class="password-toggle"><i class="fas fa-eye"></i></button>
+                        </div>
+                        <span class="form-error"></span>
+                    </div>
+                    <div class="form-group">
+                        <label>Confirm Password</label>
+                        <div class="password-wrap">
+                            <input type="password" class="form-control" name="signupConfirm"
+                                placeholder="Repeat password">
+                            <button type="button" class="password-toggle"><i class="fas fa-eye"></i></button>
+                        </div>
+                        <span class="form-error"></span>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width:100%;">Create Account <i
+                            class="fas fa-user-plus"></i></button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="./assets/java/main.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
